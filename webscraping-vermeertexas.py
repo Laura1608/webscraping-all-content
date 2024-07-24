@@ -14,10 +14,10 @@ data_list = []
 # Define path to the Excel-file with URLs
 sitemap = "vermeertexas.com_sitemap.xlsx"
 
-# Read URLs from the Excel-file
+# Read Excel-file
 df = pd.read_excel(sitemap)
 
-# Returns data column as a list
+# Return data column as a list
 urls = df['URL'].tolist()
 
 # Create new Word document to store the scraped content
